@@ -217,7 +217,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`chest0`, function (sprite, lo
     game.gameOver(true)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`poison pit`, function (sprite, location) {
-    game.over(false)
+    info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Projectile, assets.tile`bounce`, function (sprite, location) {
     tiles.setWallAt(location, false)
